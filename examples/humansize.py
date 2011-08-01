@@ -31,7 +31,7 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 
     multiple = 1024 if a_kilobyte_is_1024_bytes else 1000
         if size < multiple:
-            return '{0:.1f}{1}'.format(size, 'b')
+            return '{0:.1f}{1}'.format(size, 'B')
     
     for suffix in SUFFIXES[multiple]:
         size /= multiple
